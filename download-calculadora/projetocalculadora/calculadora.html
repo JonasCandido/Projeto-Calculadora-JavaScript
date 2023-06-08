@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora com JavaScript</h1>
+    </header>
+    <section>
+        <div id = "visor">
+           0
+        </div>
+
+        <div id="botoesoperadores">
+            <button class="butaoop" onclick="inserirop('+')">
+                <strong>+</strong>
+            </button>
+            <button class="butaoop" onclick="inserirop('-')">
+                <strong>-</strong>
+            </button>
+            <button class="butaoop" onclick="inserirop('*')">
+                <strong>x</strong>
+            </button>
+            <button class="butaoop" onclick="inserirop('/')">
+                <strong>/</strong>
+            </button>
+            <button class="butaoop" onclick="limpar()">
+                <strong>C</strong>
+            </button>
+        </div>
+
+        <div id="botoescalc">
+            <button class="butao" onclick="inserirnum('1')">
+                <strong>1</strong>
+            </button>
+            <button class="butao" onclick="inserirnum('2')">
+                <strong>2</strong>
+            </button>
+            <button class="butao" onclick="inserirnum('3')">
+                <strong>3</strong>
+            </button><br>
+            <button class="butao" onclick="inserirnum('4')">
+                <strong>4</strong>
+            </button>
+            <button class="butao" onclick="inserirnum('5')">
+                <strong>5</strong>
+            </button>
+            <button class="butao" onclick="inserirnum('6')">
+                <strong>6</strong>
+            </button><br>
+            <button class="butao" onclick="inserirnum('7')">
+                <strong>7</strong>
+            </button>
+            <button class="butao" onclick="inserirnum('8')">
+                <strong>8</strong>
+            </button>
+            <button class="butao" onclick="inserirnum('9')">
+                <strong>9</strong>
+            </button><br>
+            <button class="butao" onclick="inserirnum('0')">
+                <strong>0</strong>
+            </button>
+            <button class="butao" onclick="inserirponto('.')">
+                <strong>.</strong>
+            </button>
+            <button class="butao" id="butaoigual" onclick="calcular()">
+                <strong>=</strong>
+            </button>
+        </div>
+
+    </section>
+
+    <script src="script.js"> </script>
+</body>
+</html>
